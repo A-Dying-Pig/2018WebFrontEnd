@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="learn.css">
+<script src="learn.js"></script>
+    <head>
+        <meta charset = "UTF-8">
+        <title>网络学堂</title>
+    </head>
+    <body>
+         <img src="img/title.png" alt="网络学堂" width="100%">
+         <h2>
+            <span id="type1" onclick="type_onclick(1)">课程公告</span>
+            <span id="type2" onclick="type_onclick(2)">课程文件</span>
+        </h2>
+         <hr>
+         <div class="vl_left"></div>
+         <div class="vl_right"></div>
+        <div id="div1">
+            <span id="AllRead" onclick="div1_msg_AllRead()">一键已读</span>
+            <table id="div1_table1">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>公告标题</th>
+                    <th>发布者</th>
+                    <th>发布时间</th>
+                    <th>公告状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td onclick="div1_msg_onclick(1)">课程信息</td>
+                    <td>1101</td>
+                    <td>2018-07-01</td>
+                    <td id="msg_state1">未读</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td onclick="div1_msg_onclick(2)">考试时间</td>
+                    <td>1101</td>
+                    <td>2018-07-20</td>
+                    <td id="msg_state2">未读</td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="div1_msg1">
+                <div>
+                    <h3>课程信息</h3>
+                    随着“大前端”概念的兴起，前端开发已经超出了传统Web应用的范畴，包括移动应用、VR甚至微信小程序等都纳入了前端范畴。
+                    Web前端技术涉及的知识面非常广，目前发展速度也非常快，前端语言及其功能强大的开发框架层出不穷。
+                    但是无论如何变化，HTML5、CSS3和JavaScript是Web前端开发中最为基础的编程语言，是一切Web前端技术的基石。
+                    本课程将邀请企业有经验丰富的前端开发工程师，从Web前端的发展历史、研究热点及关键技术等方面展开教学。
+                    课程教学采用课堂精讲、MOOC辅助、课下多练相结合的形式，注重培养学生对Web前端技术的实际应用能力。<br>
+                    <strong>课堂讲授安排</strong> <br>
+                    （1）7月2日：Web前端概述、HTML&CSS<br>
+                    讲课人：赵文博，360公司奇舞团资深工程师，高级技术经理，360TC前端技术委员会常务委员，优秀前端技术培训讲师。<br>
+                    （2）7月4日：JavaScript 基础<br>
+                    讲课人：吴亮，360公司Web平台部技术总监，奇舞团负责人，360TC技术委员会委员，《JavaScript王者归来》作者。<br>
+                    （3）7月6日：JavaScript 进阶（如何写好JavaScript、前端设计和抽象的常用模式）<br>
+                    讲课人：吴亮，见前面个人介绍。<br>
+                    （4）7月9日：云服务器与Node环境（服务器与命令行、NodeJS基础）<br>
+                    讲课人：李成银，360公司奇舞团资深工程师，高级技术经理，360TC开源技术委员会主席，著名NodeJS服务端框架ThinkJS作者。<br>
+                    （5）7月10日：NodeJS服务端开发（HTTP与网络基础、NodeJS服务端编程、ThinkJS框架）<br>
+                    讲课人：李成银，见前面个人介绍。<br>
+                    （6）7月12日：前端框架与工程化（前端框架Vue.JS、前端工程化）<br>
+                     讲课人：赵文博，见前面个人介绍。<br>
+                    （7）7月17日：H5游戏前端开发（Laya游戏引擎介绍、TypeScript脚本语言及其特性、游戏架构、发布微信小游戏）<br>
+                    讲课人：刘超俊，腾讯学院讲师，现任火影忍者OL前端主程，曾开发幸运捕鱼、QQ水浒、大乐斗、企鹅社区、QQ宝贝等项目。<br>
+                    （8）7月18日：H5游戏服务端开发（H5游戏后端架构、网络协议、数据存储、常见系统设计）<br>
+                    讲课人：陈月璇，火影忍者OL手游后台主程序，后负责Q宠大乐斗、QQ水浒、西行纪、火影忍者OL等多款页游和手游的后台开发。
+                </div>
+                <p><span onclick="div1_back_onclick(1)">返回</span></p>
+            </div>
+            <div id="div1_msg2">
+                <div>
+                    <h3>考试时间</h3>
+                     时间：7月22日下午14：00<br>
+                     地点：西阶教室<br>
+                </div>
+                <p><span onclick="div1_back_onclick(2)">返回</span></p>
+            </div>
+        </div>
+        <div id="div2">
+            <div id="classes">
+                <span id="class1" onclick="file_class_onclick(1)">参考资料</span>
+                <span id="class2" onclick="file_class_onclick(2)">课程文件</span>
+            </div>
+            <div id="download">
+                <span id="DownloadAll" onclick="DownloadAllNewFiles()">一键下载新文件</span>
+            </div>
+            <table id="table_class1">
+                <thead>
+                    <tr>
+                        <th onclick="file_table_sort(1,1)">序号</th>
+                        <th onclick="file_table_sort(1,2)">标题</th>
+                        <th >简要说明</th>
+                        <th >文件大小</th>
+                        <th onclick="file_table_sort(1,5)">上传时间</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td1">1</td>
+                        <td class="td2" onclick="div2_table_file_onclick(1,1)">JavaScript:从入门到放弃</td>
+                        <td class="td3"> </td>
+                        <td class="td4">2.5M</td>
+                        <td class="td5">2018-07-01</td>
+                        <td class="td6">新文件</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">2</td>
+                        <td class="td2" onclick="div2_table_file_onclick(1,2)">CSS:从入门到放弃</td>
+                        <td class="td3"></td>
+                        <td class="td4">2.1M</td>
+                        <td class="td5">2018-07-02</td>
+                        <td class="td6">新文件</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">3</td>
+                        <td class="td2" onclick="div2_table_file_onclick(1,3)">HTML5:从入门到放弃</td>
+                        <td class="td3"></td>
+                        <td class="td4">1.8M</td>
+                        <td class="td5">2018-07-03</td>
+                        <td class="td6">新文件</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">4</td>
+                        <td class="td2" onclick="div2_table_file_onclick(1,4)">自动机:从入门到放弃</td>
+                        <td class="td3"></td>
+                        <td class="td4">3.8M</td>
+                        <td class="td5">2018-06-03</td>
+                        <td class="td6">新文件</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">5</td>
+                        <td class="td2" onclick="div2_table_file_onclick(1,5)">计算机系统软件:从入门到放弃</td>
+                        <td class="td3"></td>
+                        <td class="td4">2.6M</td>
+                        <td class="td5">2018-06-01</td>
+                        <td class="td6">新文件</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="table_class2">
+                <thead>
+                <tr>
+                    <th onclick="file_table_sort(2,1)">序号</th>
+                    <th onclick="file_table_sort(2,2)">标题</th>
+                    <th>简要说明</th>
+                    <th>文件大小</th>
+                    <th onclick="file_table_sort(2,2)">上传时间</th>
+                    <th>状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="td1">1</td>
+                    <td class="td2" onclick="div2_table_file_onclick(2,1)">PPT1</td>
+                    <td class="td3"> </td>
+                    <td class="td4">0.8M</td>
+                    <td class="td5">2018-06-30</td>
+                    <td class="td6">新文件</td>
+                </tr>
+                <tr>
+                    <td class="td1">2</td>
+                    <td class="td2" onclick="div2_table_file_onclick(2,2)">PPT2</td>
+                    <td class="td3"> </td>
+                    <td class="td4">1.2M</td>
+                    <td class="td5">2018-07-01</td>
+                    <td class="td6">新文件</td>
+                </tr>
+                <tr>
+                    <td class="td1">3</td>
+                    <td class="td2" onclick="div2_table_file_onclick(2,3)">PPT3</td>
+                    <td class="td3"> </td>
+                    <td class="td4">1.5M</td>
+                    <td class="td5">2018-07-02</td>
+                    <td class="td6">新文件</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

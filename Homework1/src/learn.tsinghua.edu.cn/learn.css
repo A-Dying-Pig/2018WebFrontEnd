@@ -1,0 +1,220 @@
+/*heading settings*/
+h1 {
+    color:black;
+    margin-left: 40px;
+}
+
+h2{
+    margin-left:40px;
+    font-size: 16px;
+}
+
+h2 span{
+    color:#242424;
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: "STFangsong";
+}
+
+h2 span#type1{
+    color:#EE7621;
+    text-decoration:underline;
+}
+
+/*file settings*/
+body h2 span:hover{
+    cursor:pointer;
+}
+
+body>div#div2{
+    padding: 20px 20px 20px 10px;
+    display:none;
+}
+
+body div#div2>table{
+    margin:5px 10px 10px 10px;
+    padding:5px 30px 30px 10px;
+    width:100%;
+}
+
+body div#div2>table>tbody tr:nth-of-type(2n+1){
+    background-color: #C6E2FF;
+}
+
+body div#div2>table>tbody tr:nth-of-type(2n){
+    background-color: #FFFAF0;
+}
+
+body div#div2>table>tbody tr td{
+    text-align: center;
+    padding: 7px 7px 7px 7px;
+    font-size: .8em;
+}
+
+
+body div#div2>table>tbody tr td:nth-of-type(2):hover{
+    cursor:pointer;
+    text-decoration: underline;
+    color:#009ACD;
+}
+
+body div#div2 span:hover{
+    cursor:pointer;
+}
+
+body div#div2 div#classes{
+    background-color: #E8E8E8;
+    width: 95%;
+    margin-left: 30px;
+    margin-right:30px;
+    margin-bottom: 5px;
+}
+
+
+body div#div2 span#class1{
+    margin-right: 20px;
+    font-size: 0.8em;
+    border:2px inset #FFA500;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body div#div2 span#class2{
+    border:2px outset #828282;
+    margin-right: 20px;
+    font-size: 1.1em;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body div#div2>div#download{
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+
+
+body div#div2 span#DownloadAll{
+    margin-left:30px;
+    font-size: 0.5em;
+    border-radius: 2px;
+    border:1px outset #EE7621;
+    padding-left: 15px;
+    padding-right:15px;
+}
+body div#div2 span#DownloadAll:hover {
+    background-color:#F5F5DC ;
+    border:1px inset #EE7621;
+}
+
+body div#div2 table#table_class2{
+    display:none;
+}
+
+/*info settings*/
+body div#div1{
+    padding: 20px 20px 20px 10px;
+}
+
+body div#div1>table>tbody tr:nth-of-type(2n+1){
+    background-color:#C6E2FF;
+}
+
+body div#div1>table>tbody tr:nth-of-type(2n){
+    background-color: #FFFAF0;
+}
+
+body div#div1>table{
+    margin:5px 10px 10px 10px;
+    padding:5px 30px 30px 10px;
+    width:100%;
+}
+
+body div#div1>table>tbody tr td{
+    /*border: 1px solid green;*/
+    text-align: center;
+    padding: 7px 7px 7px 7px;
+    font-size: .8em;
+}
+
+body div#div1>table>tbody tr td:nth-of-type(2):hover{
+    cursor:pointer;
+    text-decoration: underline;
+    color:#009ACD;
+}
+
+body div#div1>div{
+    display:none;
+}
+
+body div#div1>div>p{
+    text-align: center;
+}
+
+body div#div1>div>p span{
+    alignment: center;
+    border:1px ridge black;
+    border-radius: 2px;
+    font-size: 0.5em;
+    padding:1px 20px 1px 20px;
+}
+
+
+body div#div1>div>p span:hover{
+    cursor:pointer;
+    background-color: #F5F5DC;
+}
+
+body div#div1>div>div h3{
+    text-align: center;
+}
+
+body div#div1 span#AllRead{
+    margin-left: 30px;
+    border: 1px outset #EE7621;
+    border-radius: 2px;
+    font-size:0.5em;
+    padding:2px 15px 2px 15px;
+}
+
+body div#div1 span#AllRead:hover{
+    background-color:#F5F5DC;
+    border: 1px inset #EE7621;
+    cursor:pointer;
+}
+
+div.vl_left{
+    float:left;
+    border:1px solid #C1C1C1;
+    height: 400px;
+}
+
+div.vl_right{
+    float:right;
+    border:1px solid #C1C1C1;
+    height: 400px;
+}
+
+body div#div2 table>thead th:nth-of-type(1){
+    cursor:pointer;
+    text-decoration: underline;
+}
+body div#div2 table>thead th:nth-of-type(2){
+    cursor:pointer;
+    text-decoration: underline;
+}
+body div#div2 table>thead th:nth-of-type(5){
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+body div#div1_msg1{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body div#div1_msg2{
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
