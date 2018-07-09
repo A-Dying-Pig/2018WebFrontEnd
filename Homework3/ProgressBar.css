@@ -1,0 +1,97 @@
+[type='bar']{
+    width: 200px;
+    height:20px;
+    border:1px solid grey;
+    border-radius: 6px;
+}
+
+.ProgressBar_bar1{
+    width: 0;
+    border-radius:6px;
+    display: inline-block;
+    height:100%;
+    transition: width 500ms linear;
+}
+.ProgressBar_bar2{
+    width:100%;
+    border-radius:6px;
+    display: inline-block;
+    height:100%;
+}
+
+[type='ring']{
+    width: 120px;
+    height:120px;
+}
+
+.ProgressBar_ring4{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ProgressBar_ring3{
+    height:100%;
+    width: 50%;
+    position:relative;
+    border-radius:60px 0 0 60px;
+    transform-origin: 100% 50%;
+    z-index: 2;
+}
+
+/*将transform中的时间设置和进度更新间隔相当效果最好*/
+.ProgressBar_ring2{
+    height:100%;
+    width: 50%;
+    position: relative;
+    left:50%;
+    top:-100%;
+    border-radius:0 60px 60px 0;
+    z-index: 1;
+    transform-origin: 0 50%;
+    transition: transform 500ms linear;
+}
+
+
+.ProgressBar_ring1{
+    background-color: white;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    z-index: 3;
+    top:-230px;
+    left:10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    font-family: "Courier New";
+}
+
+
+[type='hourglass']{
+    width: 40px;
+    height:120px;
+}
+
+.ProgressBar_hourglass2{
+    width:0;
+    height:0;
+    position:absolute;
+    border-color:white ;
+    border-width: 60px 20px;
+    border-style: solid;
+    z-index: 1;
+}
+.ProgressBar_hourglass1{
+    width:0;
+    height:0;
+    position:absolute;
+    border-color: white ;
+    border-width: 60px 20px 60px;
+    border-style: solid;
+    left:-20px;
+    top:-60px;
+    transition:left 500ms ease-out,top 500ms ease-out,
+    border-top-width 500ms ease-out,border-bottom-width 500ms ease-out,border-left-width 500ms ease-out,border-right-width 500ms ease-out;
+}
