@@ -10,7 +10,7 @@
     border-radius:6px;
     display: inline-block;
     height:100%;
-    transition: width 500ms linear;
+    transition: width 200ms linear;
 }
 .ProgressBar_bar2{
     width:100%;
@@ -92,6 +92,6 @@
     border-style: solid;
     left:-20px;
     top:-60px;
-    transition:left 500ms ease-out,top 500ms ease-out,
-    border-top-width 500ms ease-out,border-bottom-width 500ms ease-out,border-left-width 500ms ease-out,border-right-width 500ms ease-out;
+    transition:left 500ms linear,top 500ms linear,
+    border-top-width 500ms linear,border-bottom-width 500ms linear,border-left-width 500ms linear,border-right-width 500ms linear;
 }

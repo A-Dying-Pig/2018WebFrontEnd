@@ -65,14 +65,15 @@ class ProgressBar{
     set_progress(set_value){
         if (set_value < 0 || set_value > 100) return null;
         this.value = set_value;
-        console.log(set_value);
         let str='';
         switch(this.type)
         {
             case 'ring':
                 str = this.container + " .ProgressBar_ring2";
                 document.querySelector(str).style.transform = `rotate(${set_value / 100 * 360}deg)`;
+                document.querySelector(str).style.transitionDuration = '500ms';
                 if(this.ring_once && this.value > 50){
+                    document.querySelector(str).style.transitionDuration = '0ms';
                     this.ring_once = false;
                     this.ring3.style.backgroundColor = this.foreground;
                     this.ring3.style.borderRadius='0 60px 60px 0';
